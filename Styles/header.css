@@ -1,0 +1,182 @@
+.search-bar {
+  flex: 1;
+  height: 26px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(192, 192, 192);
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.15);
+  width: 0px;
+}
+
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: rgb(220, 220, 220);
+  z-index: 100;
+
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+.middle-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 600px;
+}
+.right-section {
+  margin-right: 20px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.ham-menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 18px;
+}
+.youtube-logo {
+  height: 20px;
+}
+.voice-search-button {
+  height: 20px;
+  width: 20px;
+  
+}
+.search-button {
+  height: 20px;
+  width: 20px;
+}
+.buttonvoice{
+  margin-left: 25px;
+  background-color: #f7f7f7;
+  border-style: none;
+  border-radius: 16px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.uploadbutton {
+  cursor: pointer;
+  height: 24px;
+}
+.appsbutton {
+  cursor: pointer;
+  height: 24px;
+}
+.notifbutton {
+  height: 24px;
+}
+.userpfp {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+.notification-button-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.video-link {
+  text-decoration: none;
+  color: black;
+}
+
+.notification-number {
+  font-weight: 500;
+  font-size: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 15px; height: 15px;
+  border-radius: 7.5px;
+  color: white;
+  background-color: rgb(197, 1, 1);
+  position: absolute;
+  top: -4px;
+  right: -4px;
+}
+
+.buttonsearch {
+  position: relative;
+  background-color: #f7f7f7;
+  border-width: 0.15px;
+  border-color: rgb(176, 176, 176);
+  border-style: solid;
+  height: 29px;
+  margin-left: -1px;
+  width: 45px;
+  cursor: pointer;
+}
+
+.buttonsearch .tooltip, .buttonvoice .tooltip, .uploadbutton-container .tooltip, .appsbutton-container .tooltip {
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding: 4px 8px 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  opacity: 0;
+  bottom: -25px;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.tooltip-container .notification-button-container .tooltip {
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding: 4px 8px 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  opacity: 0;
+  bottom: -25px;
+  left: -32px;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.buttonsearch:hover .tooltip, .buttonvoice:hover .tooltip, .uploadbutton-container:hover .tooltip, .appsbutton-container:hover .tooltip, .tooltip-container .notification-button-container:hover .tooltip  {
+  opacity: 1;
+}
+
+.buttonsearch,.buttonvoice, .uploadbutton-container, .appsbutton-container, .tooltip {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.tooltip-container.notification-button-container .tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
